@@ -1,0 +1,461 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+ overflow-x: hidden;
+}
+
+/* navbar section */
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(241, 241, 241);
+    position: fixed; 
+    top: 0px;
+    width: 100vw;
+    border: .3px solid rgb(202, 202, 202);
+    z-index: 2;
+}
+#toggle-bar{
+    display: flex;
+    visibility: hidden;
+    display: none;
+    flex-direction: row;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+   padding: 0 6vw;
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+nav ul li{
+    padding:0.6rem 1rem;
+    width: 6vw;
+}
+nav b{
+    cursor: pointer;
+}
+nav ul .logo img{
+   
+    height: 1.9rem;
+
+}
+nav ul .options{
+    font-size: 1rem;
+    margin-top: 6px;
+     
+}
+
+nav ul .log_in_option{
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+nav ul li a{
+    color: rgb(114, 117, 117);
+}
+
+nav ul li a:hover{
+    color: black;
+}
+#bar-icon{
+    display: none;
+}
+
+/* dropdown button section */
+
+.dropbtn{
+    border: none;
+    color: rgb(114, 117, 117);
+    font-size: 1rem;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+
+#dropdown-list-1{
+    min-width: 16rem;
+    min-height: 20rem;
+}
+.dropdown-list-heading{
+     display: inline-block;
+     padding: 20px;
+ 
+}
+
+.dropdown-list{
+    display: none;
+    position:absolute;
+    background-color: rgb(236, 236, 236);
+ 
+    z-index: 1;
+    padding: 1rem;
+}
+
+#dropdown-list-2{
+    min-width: 10rem;
+    min-height: 10rem;
+}
+
+.dropdown-list a {
+      color: rgb(22, 22, 22);
+    padding: 5px;
+    display: block;
+}
+
+.dropdown-list a:hover{
+    background-color:rgb(167, 161, 161); 
+  
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+
+}
+.dropdown:hover .dropbtn{
+    color: black;
+}
+
+.horizental-bar{
+    display: none;
+}
+
+/* popup form section */
+
+.form-popup {
+  display: none;
+ 
+}
+
+
+.form {
+  max-width: 400px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  top: 5vw;
+  left: 35vw;
+  height: 500px;
+  border-radius: 10px;
+  border: 2px solid red;
+ 
+}
+#login-form{
+  height: 400px;
+}
+
+.form h1{
+    margin: 2vw 2vw;
+
+}
+
+.form input[type=text], .form input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:rgba(122, 120, 120, 0.336);
+}
+
+
+.form input[type=text]:focus, .form input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form .btn {
+  
+
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form .login{
+background-color: #04AA6D;
+width: 100%;
+color: white;
+}
+
+.form .cancel {
+    position: absolute;
+    right: 1vw;
+    top: 0vw;
+    color: red;
+ 
+}
+
+/* content section */
+.heading{
+    margin-top: 5rem;
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2.3rem;
+}
+
+
+
+.content_section{
+    margin: 0 4vw;
+    display: grid;
+  grid-template-columns: 60vw 35vw;
+    grid-gap: 2rem;
+    border: black;
+}
+
+
+.grid_left_box{
+   display: grid;
+    width: 57vw;
+    height: 2600px;
+  margin:1rem 2rem 2rem 2rem;
+  grid-template-columns: repeat(2,1fr);
+}
+.grid_left_box a{
+    color:black;
+    background-color: rgb(236, 236, 236);
+}
+
+
+.fullcard{
+    width: 27vw;
+   
+    margin: 0px;
+    
+     position: relative;
+}
+
+.card{
+    width: 27vw;
+    height: 420px;
+    background-color: white;
+    margin: 0px;
+     box-shadow: .5px 1px 3px 0.5px rgb(153, 151, 151);
+     position: relative;
+ }
+
+ .card  img{
+    width: 27vw;
+    height: 260px;
+    position: relative;
+ }
+
+ .quiz{
+     position:absolute;
+     background-color: rgba(49, 129, 25, 0.644);
+     padding: 5px 10px;
+     color: rgb(228, 222, 222);
+     right:0.4rem;
+     top: 0.4rem;
+     border: none;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     cursor: pointer;
+   
+ }
+ .time{
+     background-color: rgba(207, 206, 206, 0.76);
+     padding:4px 5px;
+     width: 7rem;
+     position: absolute;
+     bottom: 10rem;
+     left: 0.3rem;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 12px;
+      font-weight: bold;
+ }
+
+ .quiz_topic{
+     padding: 10px 2rem;
+     position: absolute;
+     text-align: center;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     text-transform: capitalize;
+     font-size: 1.3vw;
+     
+}
+
+ .text{
+    padding: 0 2rem;
+    padding-top: 1rem;
+     position:absolute;
+     bottom: 1rem;
+     color: rgb(73, 73, 73);
+     text-align: center;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     font-size: 1.1vw;
+ }
+
+ /* card icon section */
+
+ .response-icon{
+     display: flex;
+     flex-direction: row;
+     padding-left: 1vw;
+ }
+
+ .response-icons{
+     padding: 0.2vw 1.3vw ;
+     color: rgb(109, 109, 110);
+     font-size: 13px;
+ }
+
+ .response-icons i{
+     display: inline;
+ }
+
+
+ /* right block section */
+  .right_block{
+    margin-top: 4rem ;
+    width: 23vw;
+    height: 1500px;
+  }
+
+  .box{
+      width: 22vw;
+      height: 350px;
+      margin: 3rem 1rem;
+  }
+
+    #box_1{
+        height: 240px;
+        box-shadow: 0.5px 1px 3px 1px  rgb(211, 210, 210);
+         }
+    
+    .quiz_type{
+        padding: 10px 20px;
+        margin: 1px 0px;
+       font-size: 1.5rem;
+        text-align: center;
+           background-color: white;
+ }
+
+ .quiz_type a{
+     color: black;
+ }
+
+ .quiz_type:active, .categories:active, .tags:active, .choices:active  {
+     font-weight: bold;
+     background-color: rgb(238, 232, 232);
+ }
+    #women, #all{
+        background-color: rgb(236, 236, 236);
+        font-weight: bolder;
+    }
+    .box h5{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: lighter;
+
+    }
+    #box_2, #box_4, #box_5{
+        height: 200px;
+        display: grid;
+        grid-template-rows:repeat(4,1fr) ;
+     }
+
+    .box_tag, .box_choice, .box_category{
+        box-shadow: 0.5px 1px 3px 1px  rgb(211, 210, 210);
+    }
+
+    .category, .choice, .tag{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+       
+    }
+    .categories, .choices, .tags{
+        padding: 7px 6px;
+    text-align: center;
+           background-color: white;
+           margin: .5px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #box_3{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .top_quiz_question{
+        height: 170x;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin: 0.2rem 0rem;
+        box-shadow: 0.3px 0.5px 1px 1px rgb(199, 199, 199);
+    }
+    #box_3 img{
+        width: 12vw;
+    }
+     #box_3 .question{
+        padding: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: capitalize;
+     }
+
+
+
+     .button{
+         background-color: rgba(51, 179, 40, 0.788);
+         border-radius: .5rem;
+         width: 13rem;
+         height: 3.3rem;
+         color: white;
+         font-size: 1.3rem;
+         font-weight: bold;
+         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+         padding: .2rem .3rem;
+         border: none;
+         margin: 0rem 3rem;
+        }
+
+
+        /* footer section */
+
+        .footer{
+            width: 100vw;
+            height: 90px;
+            position: static;
+            margin: 3vw 0 0 0 ;
+        }
+        .upper_footer{
+            padding: 1rem ;
+            text-align: center;
+        }
+        .lower_footer{
+        
+            text-align: center;
+        }
+
+      .footer hr{
+          margin: 0rem 20rem;
+          border-top: 0.5px solid rgb(190, 190, 190);
+        
+      }  
+   .footer a{
+       padding: 0rem .3rem;
+       color: rgb(93, 132, 182);
+   }
+
+   .footer a:hover{
+       text-decoration:underline;
+   }
+
+  
