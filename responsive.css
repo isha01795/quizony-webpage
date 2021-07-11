@@ -79,17 +79,17 @@
     }
     .form {
         max-width: 70vw;
-      height: 500px;
+      height: 550px;
         position: relative;
         top: 5vw;
         left: 3vw;   
       }
 
      #mySignupForm,#myLoginForm{
-        height: 560px;
+        height: 600px;
       }
       #login-form{
-          height:400px ;
+          height:450px ;
       }
 
       #toggle-bar li, #toggle-bar a{
@@ -162,13 +162,13 @@
          
       }
       .form{
-          height: 550px;
+          height: 600px;
       }
       #mySignupForm,#myLoginForm{
-        height: 600px;
+        height: 650px;
       }
       #login-form{
-        height:450px ;
+        height:500px ;
     }
 
 }
