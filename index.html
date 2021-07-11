@@ -86,8 +86,8 @@
                       </div>
 
             </li>
-                <li class="log_in_option"><b id="open-form" onclick="openLoginForm()">Log in</b>
-                    <div class="form-popup" id="myLoginForm">
+                <li class="log_in_option"><b id="open-form" onclick="openLogForm()">Log in</b>
+                    <div class="form-popup" id="myLogForm">
                         <form action="/action_page.php" class="form " id="login-form">
                           <h1>Welcome To Quizony!</h1>
                          
@@ -97,8 +97,8 @@
                           <label for="psw"><b>Password</b></label>
                           <input type="password" placeholder="Enter Password" name="psw" required>
                       
-                          <button type="submit" class="btn login">Login</button>
-                          <button type="submit" class="btn cancel" onclick="closeLoginForm()"><i class="fa fa-window-close fa-2x" ></i></button>
+                          <button type="submit" class="btn login">Log in</button>
+                          <button type="submit" class="btn cancel" onclick="closeLogForm()"><i class="fa fa-window-close fa-2x" ></i></button>
                         </form>
                       </div></li>
             </ul>
@@ -117,10 +117,39 @@
     <div id="toggle-bar">
         <div id="bar-list">
            
-            <a href="#">Categories</a><a href="#">Create</a><a href="#">Waiting Room</a> <a href=""> Sign up
+            <a href="#">Categories</a><a href="#">Create</a><a href="#">Waiting Room</a> 
             
-    </a> 
-        <a href="">Log in</a>
+            <li class="log_in_option" ><b id="open-form" onclick="openSignupForm()" > Sign up </b>
+                <div class="form-popup" id="mySignupForm">
+                    <form action="/action_page.php" class="form">
+                      <h1>Welcome To Quizony!</h1>
+                      <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Enter Name" name="name" required>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                      <button type="submit" class="btn login">Sign up</button>
+                      <button type="submit" class="btn cancel" onclick="closeSignupForm()"><i class="fa fa-window-close fa-2x" ></i></button>
+                    </form>
+                  </div>
+                  <li class="log_in_option"><b id="open-form" onclick="openLoginForm()">Log in</b>
+                    <div class="form-popup" id="myLoginForm">
+                        <form action="/action_page.php" class="form " id="login-form">
+                          <h1>Welcome To Quizony!</h1>
+                         
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                      
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                          <button type="submit" class="btn login">Log in</button>
+                          <button type="submit" class="btn cancel" onclick="closeLoginForm()"><i class="fa fa-window-close fa-2x" ></i></button>
+                        </form>
+                      </div></li>
         </div>
        
 
@@ -556,36 +585,8 @@
             © 2021. All Rights Reserved.
          </div>
      </div>
-     <script>
-     function toggle(){
-        var nav = document.getElementById("toggle-bar");
-        if( nav.style.display === "block"){
-            nav.style.display = "none";
-        }
-        else{
-            nav.style.display = "block";
-        }
-    }
-
-    // function toggle(){
-    //     document.getElementById("toggle-bar").style.display = "block";
-    // }
-    function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-
-function openLoginForm() {
-  document.getElementById("myLoginForm").style.display = "block";
-}
-
-function closeLoginForm() {
-  document.getElementById("myLoginForm").style.display = "none";
-}
-    </script>
+     
 </body>
+<script src="./script.js"></script>
 
 </html>
