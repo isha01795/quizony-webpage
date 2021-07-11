@@ -10,7 +10,9 @@
     }
     .card, .card img, .response-icon,   .grid_left_box a{
         width: 38vw;
+    
     }
+   
     .quiz_topic{
         font-size: 2vw;
     }
@@ -35,6 +37,9 @@
        position: relative;
        border: 1px solid rgb(160, 160, 160);
 
+    }
+    .card{
+        height: 370px;
     }
     .left_bar{
         padding: 10px;
@@ -90,18 +95,7 @@
 
 
 }
-@media screen and (max-width:580px){
-    .content_section{
-        height: 2650px;
-    }
-       .footer{
-    margin-top: 20px;
-       }
-       .footer hr{
-        margin: 0px 30px;
-       }
-    
-}
+
 @media screen and (max-width:500px){
 
   
@@ -126,9 +120,7 @@
      padding: 0px 8vw;
      width: 2vw;
  }
- .content_section{
-     height: 5100px;
- }
+
  .footer hr{
   margin: 0px 30px;
  }
@@ -140,11 +132,7 @@
         width: 80vw;
         font-size: 8vw;
     }
-  
-  
-    .grid_left_box{
-        display: block;
-    }
+ 
     .logo img{
         width: 40vw;  
       }
@@ -163,7 +151,10 @@
     .content_section{
         display: block;
         margin: 0vw;
-        height: 5000px;
+       
+    }
+    .card{
+        height: 350px;
     }
     .footer{
         display: block;

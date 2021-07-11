@@ -222,7 +222,7 @@ color: white;
 .grid_left_box{
    display: grid;
     width: 57vw;
-    height: 2600px;
+    /* height: 2600px; */
   margin:1rem 2rem 2rem 2rem;
   grid-template-columns: repeat(2,1fr);
 }
@@ -242,7 +242,7 @@ color: white;
 
 .card{
     width: 27vw;
-    height: 420px;
+    height: 400px;
     background-color: white;
     margin: 0px;
      box-shadow: .5px 1px 3px 0.5px rgb(153, 151, 151);
@@ -271,9 +271,9 @@ color: white;
      background-color: rgba(207, 206, 206, 0.76);
      padding:4px 5px;
      width: 7rem;
-     position: absolute;
-     bottom: 10rem;
-     left: 0.3rem;
+     position: relative;
+     bottom: 2rem;
+   
      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      font-size: 12px;
       font-weight: bold;
@@ -433,6 +433,7 @@ color: white;
             width: 100vw;
             height: 90px;
             position: static;
+            bottom: 0%;
             margin: 3vw 0 0 0 ;
         }
         .upper_footer{
