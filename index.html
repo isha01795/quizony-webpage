@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- font awesome library link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Quizony.com- Women Quizzes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- navbar section -->
+        <nav class="navbar">
+           <ul class="left_bar">
+               <li class="logo"><img src="images/quizony_logo_img.png" alt="" srcset=""></li>
+              
+           </ul>
+          
+          <!-- <div id="toggle-bar"> -->
+            
+            <ul class="mid_bar">
+                <li class="options dropdown"><div class="dropdown"><button class="dropbtn">
+                 Categories
+                </button>
+                <div class="dropdown-list" id="dropdown-list-1">
+                    <div class="dropdown-list-heading"><b>Quizzes</b>
+                        <div class="dropdown-list-option">
+                            <a href="#">All</a>
+                            <a href="#">Top</a>
+                            <a href="#">Women</a>
+                        </div>
+                       
+                    </div>
+                    <div class="dropdown-list-heading"><b>Stories</b>
+                     <div class="dropdown-list-option">
+                         <a href="#">All</a>
+                     <a href="#">Horror</a>
+                 <a href="#">Action</a>   </div>
+                    
+                    </div>
+                    <div class="dropdown-list-heading"><b>Popular Tags</b>
+                     <div class="dropdown-list-option">
+                         <a href="#">Girls</a>
+                         <a href="#">Fun</a>
+                         <a href="#">Love</a>
+                     </div>
+                    
+                    </div>
+                </div>
+             </div>
+             </li>
+                <li class="options "><div class="dropdown"><button class="dropbtn">
+                 Create
+                </button>
+                <div class="dropdown-list" id="dropdown-list-2"><a href="# " >Create Quiz</a><a href="#">Create Story</a><a href="#">How It  Works?</a><a href="#">FAQ</a><a href="#">Contact</a></div>
+             </div> 
+             </li>
+                <li class="options"><a href="#">Waiting Room</a></li>
+                <li class="options"><a href="#">Our Story</a></li>
+                <li class="options"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="right_bar">
+                <li class="log_in_option" ><b id="open-form" onclick="openForm()" > Sign up </b>
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form">
+                          <h1>Welcome To Quizony!</h1>
+                          <label for="name"><b>Name</b></label>
+                          <input type="text" placeholder="Enter Name" name="name" required>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                      
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                          <button type="submit" class="btn login">Sign up</button>
+                          <button type="submit" class="btn cancel" onclick="closeForm()"><i class="fa fa-window-close fa-2x" ></i></button>
+                        </form>
+                      </div>
+
+            </li>
+                <li class="log_in_option"><b id="open-form" onclick="openLoginForm()">Log in</b>
+                    <div class="form-popup" id="myLoginForm">
+                        <form action="/action_page.php" class="form " id="login-form">
+                          <h1>Welcome To Quizony!</h1>
+                         
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required>
+                      
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                          <button type="submit" class="btn login">Login</button>
+                          <button type="submit" class="btn cancel" onclick="closeLoginForm()"><i class="fa fa-window-close fa-2x" ></i></button>
+                        </form>
+                      </div></li>
+            </ul>
+            
+        
+         
+        </nav>
+
+    <!-- toggle navbar section -->
+   
+    <div id="navbar"> 
+        <ul class="left_bar">
+            <li class="logo"><img src="images/quizony_logo_img.png" alt="" srcset=""></li>
+            <div> <a href="javascript:void(0);" id="bar-icon" onclick="toggle()">  <i class="fa fa-bars fa-2x"></i></a></div>
+        </ul>
+    <div id="toggle-bar">
+        <div id="bar-list">
+           
+            <a href="#">Categories</a><a href="#">Create</a><a href="#">Waiting Room</a> <a href=""> Sign up
+            
+    </a> 
+        <a href="">Log in</a>
+        </div>
+       
+
+    </div>
+</div>
+
+        
+        <!-- horizental bar section -->
+        <div class="horizental-bar">
+            <div class="bar-options">All</div>
+            <div class="bar-options">Men</div>
+            <div class="bar-options">Women</div>
+            <div class="bar-options">Couples</div>
+            <div class="bar-options">Girls</div>
+            <div class="bar-options">Boys</div>
+            <div class="bar-options">Kids</div>
+            <div class="bar-options">Love</div>
+            <div class="bar-options">All</div>
+            <div class="bar-options">Men</div>
+            <div class="bar-options">Women</div>
+            <div class="bar-options">Couples</div>
+        </div>
+
+        <!-- content section -->
+     
+        <div class="content_section">
+          <!-- left block section -->
+            <div class="left_block">
+                <div class="heading">Quizzes For Women </div> 
+              <div class="grid_left_box">
+              <a href="#"><div class="full-card">
+                <div class="card">
+                    <img src="images/women_1.jpg" alt="" class="image">
+                    <button class="quiz">Quiz</button>
+                    <p class="time">6 months ago</p>
+                    <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                    <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+                </div>
+                <div class="response-icon">
+                    <div class="response-icons">
+                        <i class="fa fa-bars" ></i>
+                        <span>29</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-eye"></i>
+                        <span>722629</span>
+                    </div>
+                    <div class="response-icons ">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span>2932</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-user" ></i>
+                        <span>jenn</span>
+                    </div>
+                </div>
+              </div></a>
+                <a href="#">
+                    <div class="fullcard">
+                        <div class="card">
+                            <img src="images/women_2.jpg" alt="" class="image">
+                            <button class="quiz">Quiz</button>
+                            <p class="time">3 months ago</p>
+                            <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                            <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+                        </div>
+                        <div class="response-icon">
+                            <div class="response-icons">
+                                <i class="fa fa-bars" ></i>
+                                <span>29</span>
+                            </div>
+                            <div class="response-icons">
+                                <i class="fa fa-eye"></i>
+                                <span>722629</span>
+                            </div>
+                            <div class="response-icons ">
+                                <i class="fa fa-thumbs-up"></i>
+                                <span>2932</span>
+                            </div>
+                            <div class="response-icons">
+                                <i class="fa fa-user" ></i>
+                                <span>jenn</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+               <a href="#">
+                <div class="fullcard">
+                    <div class="card">
+                        <img src="images/women_3.jpg" alt="" class="image">
+                        <button class="quiz">Quiz</button>
+                        <p class="time">6 months ago</p>
+                        <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                        <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+                    </div>
+                    <div class="response-icon">
+                        <div class="response-icons">
+                            <i class="fa fa-bars" ></i>
+                            <span>29</span>
+                        </div>
+                        <div class="response-icons">
+                            <i class="fa fa-eye"></i>
+                            <span>722629</span>
+                        </div>
+                        <div class="response-icons ">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span>2932</span>
+                        </div>
+                        <div class="response-icons">
+                            <i class="fa fa-user" ></i>
+                            <span>jenn</span>
+                        </div>
+                    </div>
+                   </div>
+               </a>
+               <a href="#">
+                <div class="fullcard">
+                    <div class="card">
+                        <img src="images/makeup.jpg" alt="" class="image">
+                        <button class="quiz">Quiz</button>
+                        <p class="time">1 month ago</p>
+                        <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                        <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+                    </div>
+                    <div class="response-icon">
+                        <div class="response-icons">
+                            <i class="fa fa-bars" ></i>
+                            <span>29</span>
+                        </div>
+                        <div class="response-icons">
+                            <i class="fa fa-eye"></i>
+                            <span>722629</span>
+                        </div>
+                        <div class="response-icons ">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span>2932</span>
+                        </div>
+                        <div class="response-icons">
+                            <i class="fa fa-user" ></i>
+                            <span>jenn</span>
+                        </div>
+                    </div>
+                </div>
+               </a>
+              <a href="#"> <div class="fullcard">
+                <div class="card">
+                    <img src="images/women_4.jpg" alt="" class="image">
+                    <button class="quiz">Quiz</button>
+                    <p class="time">4 months ago</p>
+                    <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                    <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+                </div>
+                <div class="response-icon">
+                    <div class="response-icons">
+                        <i class="fa fa-bars" ></i>
+                        <span>29</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-eye"></i>
+                        <span>722629</span>
+                    </div>
+                    <div class="response-icons ">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span>2932</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-user" ></i>
+                        <span>jenn</span>
+                    </div>
+                </div>
+               </div></a>
+               <a href="#"><div class="fullcard">
+                <div class="card">
+                    <img src="images/women_5.jpg" alt="" class="image">
+                    <button class="quiz">Quiz</button>
+                    <p class="time">6 months ago</p>
+                    <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                    <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+                </div>
+                <div class="response-icon">
+                    <div class="response-icons">
+                        <i class="fa fa-bars" ></i>
+                        <span>29</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-eye"></i>
+                        <span>722629</span>
+                    </div>
+                    <div class="response-icons ">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span>2932</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-user" ></i>
+                        <span>jenn</span>
+                    </div>
+                </div>
+               </div></a>
+              <a href="#"> <div class="fullcard">
+                <div class="card">
+                    <img src="images/tomboy.jpg" alt="" class="image">
+                  <button class="quiz">Quiz</button>
+                  <p class="time">3 months ago</p>
+                  <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                  <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+              </div>
+              <div class="response-icon">
+                <div class="response-icons">
+                    <i class="fa fa-bars" ></i>
+                    <span>29</span>
+                </div>
+                <div class="response-icons">
+                    <i class="fa fa-eye"></i>
+                    <span>722629</span>
+                </div>
+                <div class="response-icons ">
+                    <i class="fa fa-thumbs-up"></i>
+                    <span>2932</span>
+                </div>
+                <div class="response-icons">
+                    <i class="fa fa-user" ></i>
+                    <span>jenn</span>
+                </div>
+            </div>
+               </div></a>
+               <a href="#"><div class="fullcard">
+                <div class="card">
+                    <img src="images/women_6.jpg" alt="" class="image">
+                  <button class="quiz">Quiz</button>
+                  <p class="time">1 month ago</p>
+                  <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                  <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+              </div>
+              <div class="response-icon">
+                <div class="response-icons">
+                    <i class="fa fa-bars" ></i>
+                    <span>29</span>
+                </div>
+                <div class="response-icons">
+                    <i class="fa fa-eye"></i>
+                    <span>722629</span>
+                </div>
+                <div class="response-icons ">
+                    <i class="fa fa-thumbs-up"></i>
+                    <span>2932</span>
+                </div>
+                <div class="response-icons">
+                    <i class="fa fa-user" ></i>
+                    <span>jenn</span>
+                </div>
+
+               </div>
+             </div>  </a>
+              <a href="#">
+                <div class="fullcard">
+                    <div class="card">
+                        <img src="images/women_1.jpg" alt="" class="image">
+                      <button class="quiz">Quiz</button>
+                      <p class="time">6 months ago</p>
+                      <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                      <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+                  </div>
+                  <div class="response-icon">
+                    <div class="response-icons">
+                        <i class="fa fa-bars" ></i>
+                        <span>29</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-eye"></i>
+                        <span>722629</span>
+                    </div>
+                    <div class="response-icons ">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span>2932</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-user" ></i>
+                        <span>jenn</span>
+                    </div>
+                </div>
+            </div>  
+              </a> 
+              <a href="#">
+                <div class="fullcard">
+                    <div class="card">
+                        <img src="images/women_2.jpg" alt="" class="image">
+                      <button class="quiz">Quiz</button>
+                      <p class="time">4 months ago</p>
+                      <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                      <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+                  </div>
+                  <div class="response-icon">
+                    <div class="response-icons">
+                        <i class="fa fa-bars" ></i>
+                        <span>29</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-eye"></i>
+                        <span>722629</span>
+                    </div>
+                    <div class="response-icons ">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span>2932</span>
+                    </div>
+                    <div class="response-icons">
+                        <i class="fa fa-user" ></i>
+                        <span>jenn</span>
+                    </div>
+                   </div>
+                </div>
+              </a>   
+               <a href="#"> <div class="fullcard">
+                <div class="card">
+                    <img src="images/women_3.jpg" alt="" class="image">
+                  <button class="quiz">Quiz</button>
+                  <p class="time">2 months ago</p>
+                  <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                  <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+              </div>
+              <div class="response-icon">
+                <div class="response-icons">
+                    <i class="fa fa-bars" ></i>
+                    <span>29</span>
+                </div>
+                <div class="response-icons">
+                    <i class="fa fa-eye"></i>
+                    <span>722629</span>
+                </div>
+                <div class="response-icons ">
+                    <i class="fa fa-thumbs-up"></i>
+                    <span>2932</span>
+                </div>
+                <div class="response-icons">
+                    <i class="fa fa-user" ></i>
+                    <span>jenn</span>
+                </div>
+            </div>
+        </div></a>   
+             <a href="#">  <div class="fullcard">
+                <div class="card">
+                    <img src="images/women_4.jpg" alt="" class="image">
+                  <button class="quiz">Quiz</button>
+                  <p class="time">6 months ago</p>
+                  <p class="quiz_topic">Are you a country girl or a city girl?</p>
+                  <p class="text">This quiz will prove if you a True Country Girl or a True City Girl. Answer the questions and... </p>
+              </div>
+              <div class="response-icon">
+                <div class="response-icons">
+                    <i class="fa fa-bars" ></i>
+                    <span>29</span>
+                </div>
+                <div class="response-icons">
+                    <i class="fa fa-eye"></i>
+                    <span>722629</span>
+                </div>
+                <div class="response-icons ">
+                    <i class="fa fa-thumbs-up"></i>
+                    <span>2932</span>
+                </div>
+                <div class="response-icons">
+                    <i class="fa fa-user" ></i>
+                    <span>jenn</span>
+                </div>
+               </div>
+            </div> </a> 
+              </div>
+            </div>
+
+            
+<!-- right block section -->
+            <div class="right_block">
+                <div class ="box" id="box_1"> 
+                    <div class="quiz_type" id="all"><a href="./"></a>All</a></div>
+                    <div class="quiz_type"><a href="#">Quizzes</a></div>
+                    <div class="quiz_type"><a href="#">Stories</a></div>
+                    <div class="quiz_type"><a href="#">Top Quizzez</a></div>
+                    <div class="quiz_type"><a href="#">Waiting Room</a></div>
+                </div>
+                <div class="box" id="box_2"><h5>Quiz Categories</h5>
+                  <div class="box_category"> <div class="category"><div class="categories" id="women">Women</div><div class="categories">Men   </div><div class="categories">Couples</div><div class="categories">Adults</div></div> 
+                  <div class="category"><div class="categories">Kids</div><div class="categories">Living</div><div class="categories">Personality</div><div class="categories">Hobby</div></div> 
+                  <div class="category"> <div class="categories">Relationship</div><div class="categories">Animals</div><div class="categories">Travel</div><div class="categories">Film</div></div></div>
+                </div>
+                <div class ="box" id="box_3"><h5>Top Quizzes</h5>
+                    
+                      <div class="top_quiz_question">
+                        <img src="images/hairstyle.jpg" alt="" >  
+                       <p class="question"> do i love myself?</p></div>
+                       
+                      <div class="top_quiz_question">
+                        <img src="images/animal.jpg" alt="">  
+                        <p class="question">which animal do you like?</p></div></div>
+                <div class="box" id="box_4"><h5>Story Genres</h5>
+                  <div class="box_choice">  <div class="choice"><div class="choices">Action</div>
+                  <div class="choices">Adventure</div>
+                  <div class="choices">Romance</div>
+                  <div class="choices">Long</div></div>
+               <div class="choice">   <div class="choices">Historical</div>
+               <div class="choices">Horror</div>
+               <div class="choices">Humour</div>
+               <div class="choices">Mystery</div></div></div>
+                </div>
+<button class="button">Create Quiz</button>
+                
+                <div class="box" id="box_5"> <h5>Popular Tags</h5>
+                 <div class="box_tag"> <div class="tag">  <div class="tags">Girls
+
+                </div>
+                <div class="tags">Friends</div>
+                <div class="tags">Fun</div>
+                <div class="tags">Teens</div></div>
+                   <div class="tag"> <div class="tags">Love </div>
+                   <div class="tags">Personality</div>
+                   <div class="tags">Food</div>
+                   <div class="tags">History</div></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer section -->
+     <div class="footer"> <hr>
+         <div class="upper_footer">
+             <a href="">  Home  </a>
+           | 
+           <a href=""> Advertise</a>   |  
+           <a href="">Contact </a>  | 
+          <a href="">  About</a>   |  
+          <a href="">Privacy Policy </a>  | 
+          <a href=" "> Cookie Policy </a>
+         </div>
+         <div class="lower_footer">
+           <a href="https://quizony.com"> quizony.com</a>
+            © 2021. All Rights Reserved.
+         </div>
+     </div>
+     <script>
+     function toggle(){
+        var nav = document.getElementById("toggle-bar");
+        if( nav.style.display === "block"){
+            nav.style.display = "none";
+        }
+        else{
+            nav.style.display = "block";
+        }
+    }
+
+    // function toggle(){
+    //     document.getElementById("toggle-bar").style.display = "block";
+    // }
+    function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openLoginForm() {
+  document.getElementById("myLoginForm").style.display = "block";
+}
+
+function closeLoginForm() {
+  document.getElementById("myLoginForm").style.display = "none";
+}
+    </script>
+</body>
+
+</html>

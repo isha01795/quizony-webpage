@@ -50,8 +50,6 @@
     }
 
     #toggle-bar{
-      display: none;
-     
       visibility: visible;
     }
    .navbar{
@@ -110,7 +108,7 @@
     .grid_left_box{
         display: flex;
         flex-direction: column;
-        /* margin-left: 1vw; */
+        
     }
     .card, .card img,   .response-icon{
         width: 80vw;
@@ -147,13 +145,18 @@
     .grid_left_box{
         display: block;
     }
+    .logo img{
+        width: 40vw;  
+      }
+      #bar-icon{
+          width: 2rem;
+         
+      }
 }
    
 
 @media screen and (max-width:320px){
-    .horizental-bar{
-        width: 65vw;
-    }
+ 
     .bar-options{
         width: 23vw;
     }
@@ -165,7 +168,5 @@
     .footer{
         display: block;
     }
-    .card{
-        height:350px;
-    }
+  
 }
